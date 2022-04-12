@@ -24,11 +24,10 @@ Node* push(char c,Node* h){
     Node* p = makenode(c);
     if(h == NULL){
         h = p;
+        return h;
     }
-    else{
     p->next = h;
     h = p;
-    }
     return h;
 }
 
@@ -77,10 +76,8 @@ int main()
     char x[10] = "[({})]()";
     int a ;
 //    a = solve(x,n,first);
-    push('a',first);
-    push('b',first);
-    push('c',first);
+    first = push('a',first);
+    first = push('b',first);
+    first = push('c',first);
     print(first);
-    printf("\n%d",a);
-    // day la dong them vao
 }
