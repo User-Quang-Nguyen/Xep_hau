@@ -82,4 +82,5 @@ int main()
     push('c',first);
     print(first);
     printf("\n%d",a);
+    // day la dong them vao
 }
